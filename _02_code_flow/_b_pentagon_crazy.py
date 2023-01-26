@@ -18,7 +18,7 @@ if __name__ == '__main__':
     window.bgcolor('black')
     window.setup(width=0.75, height=0.9, startx=0, starty=0)
     
-    colors = ('red', 'blue', 'green', 'yellow', 'orange')
+    colors = ('red', 'blue', 'white', 'yellow', 'green')
     
     # Make a new turtle
     turtle_ = turtle.Turtle()
@@ -49,7 +49,7 @@ if __name__ == '__main__':
         # Turn the turtle to the right by the angle variable + 1
         turtle_.right(angle + 1)
     # Hide your turtle so you can see the pattern.
-        
+        turtle_.hideturtle()
     # Check the pattern against the picture in the recipe. If it matches, you are done!
     
     # Variations:

@@ -3,22 +3,23 @@ from tkinter import messagebox, simpledialog, Tk
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
 if __name__ == '__main__':
     # Make a new window variable, window = Tk()
-
+    window = Tk()
     # Hide the window using the window's .withdraw() method
-
+    window.withdraw()
     # Put this sentence in a pop-up message box:
     # "If you find yourself having to cross a piranha-infested river, here's how to do it..."
-
+    messagebox.showinfo(title='', message='If you find yourself having to cross a piranha-infested river, here is how you do it...')
     # Get the player to enter an adjective
-
+    word = simpledialog.askstring(title='adjective', prompt='type an adjective into this box.')
     # Get the player to enter a type of liquid
-
+    liquid = simpledialog.askstring(title='liquid', prompt='type a liquid into this box.')
     # Get the player to enter a body part
-
+    body = simpledialog.askstring(title='bodypart', prompt='type an bodypart into this box.')
     # Get the player to enter a verb
-
+    verb = simpledialog.askstring(title='verb', prompt='type a verb into this box.')
     # Get the player to enter a place
-
+    place = simpledialog.askstring(title='place' , prompt='type a place into this box.')
+    wound = simpledialog.askstring(title='noun', prompt='type a noun into this box')
     # The story below has has been written as a group of Strings joined
     # together by + signs. The story contains place holders, indicated
     # by [** **] which you need to replace with the values entered by the
@@ -27,13 +28,13 @@ if __name__ == '__main__':
     #       other parts of the story.
 
     story = (
-        "Piranhas are more [**adjective**] during the day, so cross the river at\n"
-        "night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"
-        "likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"
-        "you do, if you have an open wound, try to find another way to get "
-        "back to the [**place**]. Good luck!"
+        "Piranhas are more "+word+" during the day, so cross the river at\n"
+        "night. Piranhas are attracted to fresh "+liquid+" and will most\n"
+        "likely take a bite out of your "+body+" if you "+verb+" them. Whatever\n"
+        "you do, if you have an open "+wound+", try to find another way to get "
+        "back to the "+place+". Good luck! Ps.I hope you get eaten."
     )
-
+    messagebox.showinfo(title='full story', message=' '+story)
     # Make a pop-up that contains the final story. The \n escape characters add
     # line breaks to the story. If you need to, move them around to make your
     # story look better in the pop-up
@@ -42,5 +43,5 @@ if __name__ == '__main__':
     # and ask the player different questions.
 
     # Run the window's .mainloop() method
-
+    window.mainloop()
     pass
