@@ -2,7 +2,7 @@ from tkinter import messagebox, simpledialog, Tk
 import random
 
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
-    
+if
     # Make a new window variable, window = Tk()
     
     # Hide the window using the window's .withdraw() method

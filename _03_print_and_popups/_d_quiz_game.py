@@ -31,8 +31,7 @@ if __name__ == '__main__':
         messagebox.showerror(title='wrong', message='loser loser loser loser loser')
 
     #      // Option: Subtract a point from their score for a wrong answer
- 
-    # After all the questions have been asked, tell the user their final score
+        score - 1    # After all the questions have been asked, tell the user their final score
     # remember to convert your variable to a string using the str() function 
     
     window.mainloop()

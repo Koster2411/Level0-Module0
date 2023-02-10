@@ -29,7 +29,7 @@ if __name__ == '__main__':
         # Move the turtle (5*i) pixels. 'i' is the loop variable
         turtle_.forward(4*i)
         # Turn the turtle (360/7) degrees to the right
-        turtle_.right(360/3)
+        turtle_.right(360/2)
         # Change the turtle width to 'i' (the loop variable)
         turtle_.shapesize(1)
         # Check the pattern against the picture in the recipe. If it matches, you are done!
