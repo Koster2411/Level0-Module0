@@ -29,7 +29,24 @@ if __name__ == '__main__':
     #      // 4.  if the user's answer was correct, add one to their score
     else:
         messagebox.showerror(title='wrong', message='loser loser loser loser loser')
+    question3 = simpledialog.askstring(title='pokemon', prompt='which pokemon does the most raw damage')
+        #      // 2.  Ask the user a question
 
+        #      // 3.  Use an if statement to check if their answer is correct
+    if question3 == 'Charzard Vstar':
+        score + 1
+        #      // 4.  if the user's answer was correct, add one to their score
+    else:
+        messagebox.showerror(title='wrong', message='loser loser loser loser loser')
+    question4 = simpledialog.askstring(title='pokemon', prompt='which pokemon does the most damage on a wide range of targets?')
+        #      // 2.  Ask the user a question
+
+        #      // 3.  Use an if statement to check if their answer is correct
+    if question4 == 'Wailord and Magicarp':
+        score + 1
+        #      // 4.  if the user's answer was correct, add one to their score
+    else:
+        messagebox.showerror(title='wrong', message='loser loser loser loser loser')
     #      // Option: Subtract a point from their score for a wrong answer
         score - 1    # After all the questions have been asked, tell the user their final score
     # remember to convert your variable to a string using the str() function 

@@ -36,13 +36,16 @@ if __name__ == '__main__':
     
     # 1. Make a new turtle
     turtle_ = turtle.Turtle()
+    turtle_.getpen
     # 2. Make your turtle's shape 'turtle', .shape('turtle')
     turtle_.shape('turtle')
     # 3. Set your turtle's color using .color('green') and .pencolor('blue')
     turtle_.color('black')
-    turtle_.pencolor('black')
+    turtle_.pencolor('blue'
+    )
+    turtle_.pendown()
     # 4. Set and new width, length, and outline of our turtle
-    turtle_.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
+    turtle_.turtlesize(stretch_wid=1, stretch_len=1, outline=1)
 
     # 5. Uncomment the following line and replace 'my_turtle' with your turtle
     turtle_.onclick(turtle_clicked)

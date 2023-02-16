@@ -27,7 +27,7 @@ if __name__ == '__main__':
     # Set the turtle width to 2
     done.shapesize(3)
     # Set the turtle speed to 0 (fastest)
-    done.speed(0)
+    done.speed(10)
     # Use a for loop to repeat all of the code below ONE time (we will change
 
     # this later)

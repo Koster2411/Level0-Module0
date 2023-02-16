@@ -40,9 +40,9 @@ if __name__ == '__main__':
 
     story = (
         "Piranhas are more "+word+" during the day, so cross the river at\n"
-        ""+time+" "+time1+". Piranhas are attracted to "+adjective+" "+liquid+" and will most\n"
+        ""+time+" "+time1+". Piranhas are attracted to fresh "+liquid+" and will most\n"
         "likely take a "+thing+" out of your "+body+" if you "+verb+" with them. Whatever\n"
-        "you do, if you have an open "+wound+", try to find another way to get "
+        "you do, if you have an "+adjective+" "+wound+", try to find another way to get "
         "back to your "+place+". Good luck! Ps.I hope you get a "+thing+" on your "+body+"."
     )
     messagebox.showinfo(title='full story', message=' '+story)

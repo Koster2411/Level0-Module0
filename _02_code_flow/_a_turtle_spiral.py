@@ -18,18 +18,18 @@ if __name__ == '__main__':
     # This code sets our shape to a turtle
     turtle_.shape('arrow')
     # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
-    turtle_.speed(5)
+    turtle_.speed(0)
     # Set your turtle's color using .color('green')
     turtle_.color('green')
     turtle_.pensize(3)
     # Use a loop to repeat a the code below 50 times
-    for i in range(50):
+    for i in range(300):
         # Set the turtle color to a random color
         turtle_.color(get_random_color())
         # Move the turtle (5*i) pixels. 'i' is the loop variable
         turtle_.forward(4*i)
         # Turn the turtle (360/7) degrees to the right
-        turtle_.right(360/2)
+        turtle_.right(360/2.01)
         # Change the turtle width to 'i' (the loop variable)
         turtle_.shapesize(1)
         # Check the pattern against the picture in the recipe. If it matches, you are done!
